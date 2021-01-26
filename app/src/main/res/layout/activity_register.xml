@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:fillViewport="false">
+<android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Register" android:id="@+id/coordinatorLayout2">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:outlineAmbientShadowColor="@android:color/white"
+            android:outlineSpotShadowColor="@android:color/white" android:background="@android:color/white">
+
+        <EditText
+                android:layout_width="354dp"
+                android:layout_height="44dp"
+                android:inputType="textPersonName"
+                android:text="Nome"
+                android:ems="10"
+                android:id="@+id/editText2" android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.54"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                android:fontFamily="sans-serif-condensed-light" android:textStyle="bold"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text="E-mail"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/editText2"
+                android:fontFamily="serif-monospace" android:textStyle="bold"/>
+        <Button
+                android:text="Cadastrar"
+                android:layout_width="142dp"
+                android:layout_height="42dp"
+                android:id="@+id/BotaoCadastrar"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp" android:layout_marginBottom="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/button_background" app:layout_constraintStart_toEndOf="@+id/BotaoVoltar"
+                android:layout_marginStart="33dp" android:textColor="#F4F7F6"/>
+        <Button
+                android:text="Voltar"
+                android:layout_width="164dp"
+                android:layout_height="41dp"
+                android:id="@+id/BotaoVoltar" app:layout_constraintEnd_toStartOf="@+id/BotaoCadastrar"
+                android:layout_marginEnd="10dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="10dp" android:layout_marginBottom="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.426"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView6"
+                android:background="@drawable/button_background" app:layout_constraintVertical_bias="1.0"
+                android:textColor="#F4F7F6"/>
+        <ImageView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/interagindo_com_a_tela"
+                android:id="@+id/imageView2" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                app:layout_constraintHorizontal_bias="0.527"
+                android:layout_marginTop="36dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="Onde você mora?"
+                android:layout_width="190dp"
+                android:layout_height="31dp"
+                android:id="@+id/textView4" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="15dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="15dp"
+                app:layout_constraintHorizontal_bias="0.023"
+                android:textSize="18sp" android:textColor="@android:color/black"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+                android:fontFamily="serif-monospace" android:textStyle="bold"/>
+        <TextView
+                android:text="Interesses:"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:id="@+id/textView6" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="15dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="15dp"
+                app:layout_constraintHorizontal_bias="0.129"
+                android:textSize="18sp" android:textColor="@android:color/black"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/spinner"
+                android:fontFamily="serif-monospace"/>
+        <TextView
+                android:text="Como você se identifica?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textColor="@android:color/black" android:textSize="18sp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.108"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" android:layout_marginTop="24dp"
+                android:fontFamily="serif-monospace" android:textStyle="bold"/>
+        <RadioGroup
+                android:layout_width="242dp"
+                android:layout_height="90dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                android:id="@+id/radioGroup"
+                android:layout_marginTop="28dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.053">
+            <RadioButton
+                    android:text="Mulher"
+                    android:layout_width="136dp"
+                    android:layout_height="18dp" android:id="@+id/radioButton2" android:layout_weight="1"
+                    android:fontFamily="serif-monospace" android:textStyle="bold"/>
+            <RadioButton
+                    android:text="Homem"
+                    android:layout_width="136dp"
+                    android:layout_height="18dp" android:id="@+id/radioButton3" android:layout_weight="1"
+                    android:fontFamily="serif-monospace" android:textStyle="bold"/>
+            <RadioButton
+                    android:text="Prefiro não informar"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" android:id="@+id/radioButton" android:layout_weight="1"
+                    android:fontFamily="serif-monospace" android:textStyle="bold"/>
+        </RadioGroup>
+        <Spinner
+                android:layout_width="154dp"
+                android:layout_height="34dp"
+                android:id="@+id/spinner" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" android:layout_marginTop="12dp"
+                android:entries="@array/estados_brasil"/>
+        <android.support.constraint.Constraints android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/constraints"/>
+        <CheckBox
+                android:text="Automação de testes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox4"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.207" android:layout_marginTop="24dp"
+                app:layout_constraintTop_toTopOf="@+id/textView6" android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+        <CheckBox
+                android:text="JAVA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox5"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="@+id/textView6" app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox6" android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+        <CheckBox
+                android:text="JavaScript"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/checkBox7"
+                app:layout_constraintEnd_toEndOf="@+id/textView6" app:layout_constraintStart_toStartOf="@+id/textView6"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox5" android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+        <CheckBox
+                android:text="Python"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox6"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.096" app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+                android:fontFamily="serif-monospace" android:textStyle="bold"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>
+</ScrollView>

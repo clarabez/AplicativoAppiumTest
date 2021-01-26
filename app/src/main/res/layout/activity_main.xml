@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity" android:id="@+id/coordinatorLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true">
+
+<android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay" android:id="@+id/appBarLayout"
+            android:background="@android:color/background_light">
+        <TextView
+                android:text="@string/texto_home"
+                android:layout_width="364dp"
+                android:layout_height="67dp"
+                android:id="@+id/TextoApresentacao"
+                android:textColor="#0C0C0C" android:textSize="18sp" android:textAlignment="center"
+                android:fontFamily="serif-monospace"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
+                android:textStyle="bold"/>
+        <Button
+                android:text="Sobre o App"
+                android:layout_width="224dp"
+                android:layout_height="46dp"
+                android:background="@drawable/button_background"
+                android:id="@+id/BotaoBotaoMaisInfos"
+                android:onClick="cliqueBotao"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/botaoListarCadastros"
+                app:layout_constraintHorizontal_bias="0.497"/>
+        <Button
+                android:text="Listar Alunos"
+                android:layout_width="221dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background"
+                android:id="@+id/botaoListarCadastros"
+                android:onClick="cliqueBotao"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/botaoCadastrar"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/BotaoBotaoMaisInfos"
+                app:layout_constraintVertical_bias="0.0"/>
+        <Button
+                android:text="Cadastrar Aluno"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:id="@+id/botaoCadastrar"
+                android:onClick="cliqueBotao"
+                android:background="@drawable/button_background"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/TextoApresentacao"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="163dp" app:srcCompat="@drawable/appiumwithpython"
+                android:id="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:scaleType="centerInside"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.021"/>
+        <TextView
+                android:text="Versão 1.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextVersion"
+                android:textColor="#0C0C0C"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" app:layout_constraintHorizontal_bias="0.048"
+                android:layout_marginTop="28dp" app:layout_constraintTop_toBottomOf="@+id/BotaoBotaoMaisInfos"
+                android:textStyle="bold" android:fontFamily="serif-monospace"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+</ScrollView>
